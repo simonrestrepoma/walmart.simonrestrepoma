@@ -1,0 +1,415 @@
+*{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --color-primero: #0071ce;
+    --color-segundo: black;
+    --color-tercer: #ffc220;
+    --color-cuarto: white;
+    --color-quinto: #03183f;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: auto;
+}
+.menu a{
+    color: var(--color-primero);
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.otros a{
+    color: var(--color-primero);
+}
+
+.otros a:hover{
+    text-decoration: underline;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.logotipo{
+    width: 150px;
+
+}
+
+nav ul li{
+    display: inline;
+    padding: 0px 30px;
+    margin-bottom: 160px;
+    text-align: center;
+    
+}
+
+.cuenta a{
+    text-align: left;
+    color: var(--color-segundo);
+    background-color: var(--color-tercer);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+
+.cuenta a:hover{
+    -webkit-box-shadow: -3px 6px 29px -10px rgba(8,0,0,0.71);
+-moz-box-shadow: -3px 6px 29px -10px rgba(0,0,0,0.71);
+box-shadow: -3px 6px 29px -10px rgba (0,0,0,0.71);
+transition: 1s;
+background-color: var(--color-cuarto);
+
+}
+
+
+
+section .dos{
+    background-color: var(--color-tercer);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.variaciones{ 
+    background-color: var(--color-cuarto);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+h5{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.variaciones a{
+    color: var(--color-quinto);
+}
+
+.variaciones a:hover{
+    text-decoration: none;
+    color: var(--color-tercer);
+}
+
+.logos{ 
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+.marca{
+    margin: auto;
+    padding-left: 50px;
+}
+
+.marca h1{
+    color: var(--color-primero);
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.marca p{
+    color: var(--color-primero);
+    padding: 30px;
+}
+
+.uno{
+    display: flex;
+
+}
+
+b{
+    font-size: 50px;
+}
+
+.nuestro-logo{
+
+    padding: 50px 0px 0px 80px;
+
+}
+
+.dos h1{
+    color: var(--color-primero);
+    font-size: 50px;
+}
+
+.nuestro-logo p{
+    color: var(--color-cuarto);
+}
+
+.parrafo{
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+
+.flex{
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.slogan{
+    color: var(--color-cuarto);
+    align-items: center;
+    
+}
+
+.redes{
+    color: var(--color-tercer);
+    padding-top: 10px;
+}
+
+.redes ul li{
+    display: inline;
+    justify-content: center;
+}
+
+.redes ul li a{
+    color: var(--color-cuarto);
+    font-size: 13px;
+    padding: 10px;
+}
+
+.redes ul li a:hover{
+    color: var(--color-tercer);
+}
+
+
+.pie a{
+    border: 20px 0px;
+    color: var(--color-cuarto);
+}
+
+
+.otros{ 
+    display: flex;
+    padding: 10px;
+   gap: 20px;
+   
+}
+
+
+.otros h4{
+    color: var(--color-tercer);
+}
+
+.flex{
+ display: flex;
+align-items: center;    
+}
+
+footer{ 
+    align-items: center;
+    background-color: var(--color-primero);
+    
+}
+
+.pie .item{
+    padding: 1px;
+}
+
+.registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px 70px 80px;
+    
+}
+/* ##Dispositivo = tablets, mobiles de 481px a 767px */
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+    }
+    .logotipo {
+       padding-bottom: 1em; flex-basis: 80%;   
+    }
+    .menu {
+        font-size: 1em;padding: 1em;justify-content: center;
+        text-align: center;
+        }
+    .menu ul li {
+        margin-top: 0em; padding: 0.5em;
+        }
+    .cuenta {
+        font-size: 2em; padding: 1em; margin-top: 10px;
+    }
+    .uno {
+        flex-wrap: wrap; flex-direction: column;
+    }
+    .imagotipo {
+        flex-wrap: wrap; flex-direction: column; width: 100%;
+  } 
+    h1 {font-size: 3em;text-align: right; padding-left: 0em;
+    }
+    p {font-size: 1em;padding-bottom: 0em;line-height: 2em;
+    }
+    .variaciones {
+        flex-direction: column;justify-content: center;width: 100%;
+    }
+    h5 {
+        flex-direction: column;justify-content: center;width: 100%;
+    }
+    footer .flex {
+        flex-direction: column;padding-top: 1em;
+    }
+    .slogan {
+        font-size: 1em; text-align: center;
+    }
+    .redes {
+        text-align: center;
+    }
+    .redes ul li a {
+        font-size: 1em; padding: 0em 1em;
+    }
+    .otros {
+        flex-wrap: wrap; padding-top: 1em; padding-bottom: 1em;
+        text-align: right; justify-content: center;
+    }
+    .pie {
+        font-size: 1em; padding: 1em 1em; text-align: right;
+    }
+    .registro {
+        flex-direction: column;
+    }
+    .display-flexuno {
+        flex-wrap: wrap; flex-direction: column; width: 100%;
+    }
+
+}
+/* ##Dispositivo = tablets, mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+    }
+    .logotipo {
+        flex-basis: 40%; padding-bottom: 2em;
+    }
+    .menu {
+        font-size: 1em; padding-bottom: 1em;  
+    }
+    .menu ul li {
+        padding: 1em;
+    }
+    .cuenta {
+        font-size: 1em; padding-top: 1em; padding-bottom: 1em;
+    }
+    .uno {
+        flex-wrap: wrap; flex-direction: column;
+    }
+    .imagotipo {
+        flex-wrap: wrap;flex-direction: column;width: 100%;
+    }
+    h1 {font-size: 4em;text-align: right;padding-left: 0em;
+    }
+    p {font-size: 1em;padding-bottom: 0em; line-height: 45px;
+    }
+    .variaciones {
+        flex-direction: column;justify-content: flex-start;width: 100%;
+    }
+    h5 {
+        flex-direction: column;justify-content: center;width: 100%;
+    }
+    footer .flex {
+        flex-direction: column; padding-top: 3em;
+    }
+    .slogan {
+        font-size: 3em; text-align: center;
+    }
+    .redes {
+        text-align: center;
+    }
+    .redes ul li a {
+        font-size: 2em; padding: 0em 1em;
+    }
+    .otros {
+        flex-wrap: wrap; padding-top: 3em; padding-bottom: 3em;
+        text-align: right; justify-content: center;
+    }
+    .pie {
+        font-size: 2em; padding: 2em 3em; text-align: right;
+    }
+    .registro {
+        flex-direction: column;
+    }
+    .display-flexuno {
+        flex-wrap: wrap;flex-direction: column;width: 100%;
+    }
+
+    /* ##Dispositivo = tablets, mobiles de 481px a 767px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+    .logotipo {
+        flex-basis: 50%; padding-bottom: 2em;
+    }
+    .menu {
+        font-size: 40px; padding-bottom: 10px;
+    }
+    .cuenta {
+        font-size: 1em; padding-top: 1em; padding-bottom: 1em;
+    }
+    .uno {
+        flex-wrap: wrap; flex-direction: column;
+    }
+    .imagotipo {
+        flex-wrap: wrap; flex-direction: column; width: 100%;
+    }
+    h1 {font-size: 5em;text-align: right;padding-left: 0em;
+    }
+    p {font-size: 1.5em;padding-bottom: 0em; line-height: 45px;
+    }
+    .variaciones {
+        flex-direction: column;justify-content: flex-start;width: 100%;
+    }
+    h5 {
+        flex-direction: column;justify-content: center;width: 100%;
+    }
+    footer .flex {
+        flex-direction: column; padding-top: 5em;
+    }
+    .slogan {
+        font-size: 5em; text-align: center;
+    }
+    .redes {
+        text-align: center;
+    }
+    .redes ul li a {
+        font-size: 1em;padding: 0em 4em;
+    }
+    .otros {
+        flex-wrap: wrap; padding-top: 15em;padding-bottom: 4em;
+        text-align: right;justify-content: center;
+    }
+    .pie {
+        font-size: 2em; padding: 2em 4em; text-align: right;
+    }
+    .registro {
+        align-items: flex-start;
+    }
+    .display-flexuno {
+        flex-wrap: wrap; flex-direction: column; width: 100%;
+    }
+}
